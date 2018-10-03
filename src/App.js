@@ -114,6 +114,7 @@ class App extends Component {
       data : result
     })
   }
+  //filter by payment
   filterByPayment = (e) => {
     const listByPayment = this.state.data;
     const filter = e.target.value;
@@ -144,7 +145,8 @@ class App extends Component {
   render() {
     return (
       <div className="App container-fluid">
-      <Layout></Layout>   
+      <Layout></Layout>  
+
         {/* <MyNavbar /> */}
         {/* <div className="row ml-5">
         <ResultsList products={this.state.data} change ={this.deleter}/>
